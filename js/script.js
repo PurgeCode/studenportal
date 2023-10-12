@@ -11,8 +11,8 @@ menuClose.addEventListener("click", () => {
   overlay.classList.remove("overlay-active");
 });
 
-// let studentName = prompt("Please Input Your Student Name");
-// document.querySelector("#personName").textContent = studentName;
+let studentName = prompt("Please Input Your Student Name");
+document.querySelector("#personName").textContent = studentName;
 
 function submitGrade() {
   let english = document.getElementById("english").value;
