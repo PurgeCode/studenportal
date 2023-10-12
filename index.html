@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grades Calculator</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <h1>Hi! Welcome <span id="personName"></span> To Student Portal</h1>
+      </div>
+      <header>
+        <a class="logo" href="/">Grading</a>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-user"></i><span>Student</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-book"></i><span>Subject</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-graduation-cap"></i
+                ><span>Grades</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-building-flag"></i
+                ><span>Faculty</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-comments"></i><span>Connect</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="cta" href="#">Logout</a>
+        <p class="menu cta">Menu</p>
+      </header>
+      <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="#">Student</a>
+          <a href="#">Subject</a>
+          <a href="#">Grades</a>
+          <a href="#">Faculty</a>
+          <a href="#">Connect</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-one">
+          <h2>Input your Grades</h2>
+          <div class="forms">
+            <form action="">
+              <div class="form-group">
+                <label for="english">English</label>
+                <input type="text" id="english" name="english" />
+              </div>
+              <div class="form-group">
+                <label for="science">Science</label>
+                <input type="text" id="science" name="science" />
+              </div>
+              <div class="form-group">
+                <label for="math">Math</label>
+                <input type="text" id="math" name="math" />
+              </div>
+              <div class="form-group">
+                <label for="history">History</label>
+                <input type="text" id="history" name="history" />
+              </div>
+              <div class="form-group">
+                <label for="chemistry">Chemistry</label>
+                <input type="text" id="chemistry" name="chemistry" />
+              </div>
+              <div class="form-group">
+                <label for="biology">Biology</label>
+                <input type="text" id="biology" name="biology" />
+              </div>
+              <div class="form-group">
+                <label for="physics">Physics</label>
+                <input type="text" id="physics" name="physics" />
+              </div>
+              <div class="form-group">
+                <input type="button" value="Submit" onclick="submitGrade()" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="content-two"><h3>Verify your Grades</h3></div>
+        <div class="content-three"><h4>Result</h4></div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
